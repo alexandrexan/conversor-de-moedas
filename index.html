@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Dólar</title>
+    <link rel="icon" type="image/x-icon" href="favicon/dolar.png">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -91,6 +92,22 @@
             font-size: 1.1em;
             color: #d0d0d0;
         }
+        .criador {
+            margin-top: 30px;
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        .criador p {
+            margin: 0;
+        }
+        .criador a {
+            color: #88c0d0;
+            text-decoration: none;
+        }
+        .criador a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +121,9 @@
         <button onclick="converter()">Converter</button>
 
         <p id="resultado"></p>
+        <div class="criador">
+            <p>Criado por <strong><a href="https://github.com/alexandrexan" target="_blank">XAN</a></strong></p>
+        </div>
     </div>
 
     <script>
