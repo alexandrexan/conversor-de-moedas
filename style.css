@@ -49,8 +49,8 @@ input[type="number"] {
     margin-bottom: 25px;
     border: 1px solid #555555;
     border-radius: 6px;
-    background-color: #3a3a3a; /* Fundo do input escuro */
-    color: #f0f0f0; /* Texto do input claro */
+    background-color: #3a3a3a;
+    color: #f0f0f0;
     font-size: 1.1em;
     outline: none; /* Remove a borda de foco padrão */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -107,7 +107,7 @@ button:active {
     margin-top: 30px;
     padding-top: 20px;
     font-size: 0.9em;
-    color: #888;
+    color: #ffffff;
 }
 
 .criador p {
