@@ -28,6 +28,13 @@ body {
     border: 1px solid #444;
 }
 
+.descricao {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #d0d0d0;
+}
+
 h1 {
     color: #88c0d0;
     margin-bottom: 30px;
