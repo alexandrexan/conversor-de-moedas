@@ -1,4 +1,5 @@
 Conversor de Moeda (R$ > US$)
+
 Desenvolvi uma aplicação web simples e funcional para conversão de Real para Dólar, consumindo dados em tempo real da Awesome API. O projeto foi construído com HTML5, CSS3 e JavaScript, com foco em:
 
 Integração com API para buscar a cotação atualizada do dólar.
@@ -14,6 +15,7 @@ Esse projeto demonstra minha capacidade de trabalhar com consumo de APIs, manipu
 ---
 
 Currency Converter (R$ > US$)
+
 I developed a simple and functional web application to convert Brazilian Reais (R$) to US Dollars (US$), consuming real-time data from the Awesome API. The project was built with HTML5, CSS3, and JavaScript, focusing on:
 
 Integration with an API to fetch the latest dollar exchange rate.
