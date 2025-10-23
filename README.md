@@ -11,8 +11,7 @@ Feedback visual claro em casos de erro ou sucesso na conversão.
 
 Esse projeto demonstra minha capacidade de trabalhar com consumo de APIs, manipulação do DOM e boas práticas de UI/UX, criando soluções que unem funcionalidade e estética.
 
-
-
+---
 
 Currency Converter (R$ > US$)
 I developed a simple and functional web application to convert Brazilian Reais (R$) to US Dollars (US$), consuming real-time data from the Awesome API. The project was built with HTML5, CSS3, and JavaScript, focusing on:
