@@ -7,32 +7,45 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, conversor, moeda, câmbio, dólar, real">
     <meta name="author" content="Alexandre Xan">
 
-    <title>Conversor R$ > US$</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <title data-i18n="title">Conversor R$ > US$</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"> 
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <div class="container">
-        <p class="descricao">Transforme valores de reais em dólares com base na cotação atual.</p>
-        <h1>Conversor R$ > US$</h1>
-        <div id="cotacaoAtual">Carregando cotação do Dólar...</div>
+        <div class="idioma">
+            <button class="flag-btn" data-lang="pt-br" aria-label="Português (Brasil)">
+                <img src="https://flagcdn.com/w40/br.png" alt="Bandeira do Brasil">
+            </button>
+            <button class="flag-btn" data-lang="en-us" aria-label="English (United States)">
+                <img src="https://flagcdn.com/w40/us.png" alt="Bandeira dos Estados Unidos">
+            </button>
+        </div>
 
-        <label for="valorCarteira">Quanto você tem na carteira (R$)?</label>
+        <p class="descricao" data-i18n="descricao">Transforme valores de reais em dólares com base na cotação atual.</p>
+        <h1 data-i18n="titulo">Conversor R$ > US$</h1>
+        <div id="cotacaoAtual" data-i18n="cotacao">Carregando cotação do Dólar...</div>
+
+        <label for="valorCarteira" data-i18n="labelCarteira">Quanto você tem na carteira (R$)?</label>
         <input type="number" id="valorCarteira" placeholder="Ex: 1000.00" step="0.01">
 
-        <button onclick="converter()">Converter</button>
+        <button onclick="converter()" data-i18n="botaoConverter">Converter</button>
 
         <p id="resultado"></p>
+
         <div class="criador">
-            <p>Criado por <strong><a href="https://github.com/alexandrexan" target="_blank">XAN</a></strong></p>
+            <p data-i18n="creditos">Criado por <strong><a href="https://github.com/alexandrexan" target="_blank">XAN</a></strong></p>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="traducao.js"></script>
 </body>
 </html>

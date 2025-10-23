@@ -129,3 +129,30 @@ button:active {
 .criador a:hover {
         text-decoration: underline;
 }
+
+.idioma {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.flag-btn {
+    background: none !important;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.flag-btn:hover {
+    background: none !important;
+}
+
+.flag-btn:focus {
+    outline: none;
+    background: none !important;
+}
+
+.flag-btn img {
+    background: none !important;
+}

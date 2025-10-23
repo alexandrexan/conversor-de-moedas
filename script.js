@@ -27,6 +27,15 @@ async function buscarCotacaoDolar() {
         cotacaoAtualElement.textContent = "Erro ao carregar a cotação. Verifique sua conexão.";
         cotacaoAtualElement.style.color = "#bf616a";
     }
+
+    // Atualiza o texto da cotação conforme o idioma selecionado
+    const lang = document.documentElement.lang || "pt-br";
+    const textoCotacao = (typeof traducoes !== "undefined" && traducoes[lang]?.cotacaoAtualTexto)
+    ? traducoes[lang].cotacaoAtualTexto
+    : "Dólar atual:";
+
+    cotacaoAtualElement.textContent = `${textoCotacao} R$ ${cotacaoDolarAtual.toFixed(2).replace('.', ',')}`;
+
 }
 
 // Função para normalizar entrada de números brasileiros
@@ -72,12 +81,17 @@ function converter() {
     // Normaliza o número brasileiro para formato internacional
     const valorNormalizado = normalizarNumerobrasileiro(valorCarteiraInput);
     
-    // Valida se o número é válido
+    // Valida se o número é válido + traduz mensagem de erro
     if (!isNumeroValido(valorNormalizado)) {
-        resultadoElement.textContent = "Por favor, insira um valor válido.";
-        resultadoElement.classList.add('error');
-        return;
-    }
+    const lang = document.documentElement.lang || "pt-br";
+    const msgErro = (typeof traducoes !== "undefined" && traducoes[lang]?.erroValorInvalido)
+        ? traducoes[lang].erroValorInvalido
+        : "Por favor, insira um valor válido.";
+
+    resultadoElement.textContent = msgErro;
+    resultadoElement.classList.add('error');
+    return;
+}
     
     // Converte para número
     const valorCarteira = parseFloat(valorNormalizado);
@@ -96,7 +110,14 @@ function converter() {
         currency: 'USD'
     });
     
-    resultadoElement.textContent = `${valorReaisFormatado} equivalem a ${valorDolarFormatado}`;
+    // Antes de exibir o resultado
+    const lang = document.documentElement.lang || "pt-br";
+    const textoEquivalem = (typeof traducoes !== "undefined" && traducoes[lang]?.equivalemA)
+    ? traducoes[lang].equivalemA
+    : "equivalem a";
+
+    // Exibe o resultado formatado
+    resultadoElement.textContent = `${valorReaisFormatado} ${textoEquivalem} ${valorDolarFormatado}`;
 }
 
 // Função para formatar entrada em tempo real (opcional)
