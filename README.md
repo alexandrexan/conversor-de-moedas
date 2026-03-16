@@ -27,3 +27,11 @@ Modern and responsive interface, with attention to colors, contrast, and micro-i
 Clear visual feedback for error or success during conversion.
 
 This project demonstrates my ability to work with API consumption, DOM manipulation, and UI/UX best practices, creating solutions that combine functionality and aesthetics.
+
+---
+
+# Preview
+
+![preview do projeto](./previa-gif/money.gif)
+
+---
